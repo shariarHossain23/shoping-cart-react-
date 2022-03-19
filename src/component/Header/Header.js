@@ -9,7 +9,7 @@ const Header = ({count}) => {
                 <div className='col-md-4'>
                     <h2>Shoping Cart</h2>
                 </div>
-                <div className='col-md-8 header-menu'>
+                <div className='col-md-8  header-menu'>
                     <ul>
                         <li>Home</li>
                         <li>About</li>
