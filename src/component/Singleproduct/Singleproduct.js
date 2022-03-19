@@ -5,7 +5,10 @@ const Singleproduct = (props) => {
     // console.log(props.product)
     const {title,image} = props.product
     return (
-        <div className='col-md-4 g-4'>
+        <div className='col-md-4 g-4 ' 
+        data-aos="zoom-in-up"
+        data-aos-easing="linear"
+        >
             <div className='card shadow p-4'>
                 <h2>{title.slice(0,10)}</h2>
                 <div className='text-center'>
