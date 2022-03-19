@@ -11,7 +11,7 @@ const Allproduct = () => {
     return (
         <div>
             <div className='container row mx-auto'>
-                {products.map(pd => <Singleproduct product ={pd}></Singleproduct>)}
+                {products.map(pd => <Singleproduct product ={pd}key={pd.id}></Singleproduct>)}
             </div>
         </div>
     );

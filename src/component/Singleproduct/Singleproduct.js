@@ -2,7 +2,7 @@ import React from 'react';
 import Reactmodal from '../Reactmodal/Reactmodal';
 
 const Singleproduct = (props) => {
-    console.log(props)
+    // console.log(props.product)
     const {title,image} = props.product
     return (
         <div className='col-md-4 g-4'>
@@ -13,7 +13,7 @@ const Singleproduct = (props) => {
                 </div>
                 <div className='mt-4'>
                     <button className='btn btn-success mx-2'>Add to cart</button>
-                    <Reactmodal></Reactmodal>
+                    <Reactmodal product = {props.product}></Reactmodal>
                 </div>
             </div>
         </div>
