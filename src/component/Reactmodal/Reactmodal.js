@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 
 const Reactmodal = (props) => {
-   console.log(props.product)
    const {title,image,description,price} = props.product;
 //    const {title} = props.product
     const [show, setShow] = useState(false);

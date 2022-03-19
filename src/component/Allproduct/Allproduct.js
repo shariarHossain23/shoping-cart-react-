@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Singleproduct from '../Singleproduct/Singleproduct';
 
-const Allproduct = () => {
+const Allproduct = ({cart}) => {
     const [products,setProducts] = useState([])
     useEffect(()=>{
         fetch('https://fakestoreapi.com/products')
@@ -11,7 +11,7 @@ const Allproduct = () => {
     return (
         <div>
             <div className='container row mx-auto'>
-                {products.map(pd => <Singleproduct product ={pd}key={pd.id}></Singleproduct>)}
+                {products.map(pd => <Singleproduct product ={pd}key={pd.id} cart ={cart}></Singleproduct>)}
             </div>
         </div>
     );
