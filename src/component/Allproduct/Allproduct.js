@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Singleproduct from '../Singleproduct/Singleproduct';
 
 const Allproduct = () => {
     const [products,setProducts] = useState([])
@@ -9,8 +10,8 @@ const Allproduct = () => {
     },[])
     return (
         <div>
-            <div>
-                {products.map(pd => console.log(pd))}
+            <div className='container row mx-auto'>
+                {products.map(pd => <Singleproduct product ={pd}></Singleproduct>)}
             </div>
         </div>
     );

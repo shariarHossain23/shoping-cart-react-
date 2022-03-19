@@ -9,7 +9,7 @@ const Reactmodal = () => {
     return (
         <>
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+        Details
       </Button>
 
       <Modal show={show} onHide={handleClose}>
